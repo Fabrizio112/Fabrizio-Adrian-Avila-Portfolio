@@ -606,3 +606,69 @@ footer p {
         transform: scale(1);
     }
 }
+
+#menu {
+    display: none;
+}
+
+@media (max-width:850px) {
+
+    #seccion-header {
+        display: flex;
+        flex-direction: column-reverse
+    }
+
+    .header__parte-derecha {
+        width: 100%;
+        height: 50%
+    }
+
+    .header__parte-derecha .imagen__1 {
+        width: 60%;
+        height: 100%;
+    }
+
+    .header__parte-izquierda {
+        width: 100%;
+        height: 50%;
+        align-items: center;
+    }
+
+    .parte-izquierda__redes-sociales {
+        margin-bottom: 2rem !important;
+    }
+
+    .barra-de-navegacion__derecha {
+        display: none !important;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    .header__parte-izquierda .header__hello {
+        font-size: 2rem;
+    }
+
+    .header__parte-izquierda .header__name {
+        font-size: 4.4rem;
+    }
+
+    .header__parte-izquierda .header__dev {
+        font-size: 1.8rem;
+    }
+
+    .header__boton {
+        width: 30%;
+        font-size: 1rem;
+    }
+
+    .parte-izquierda__redes-sociales {
+        width: 20%;
+
+    }
+
+    .contenedor_1-botones {
+        width: 50%;
+    }
+}
