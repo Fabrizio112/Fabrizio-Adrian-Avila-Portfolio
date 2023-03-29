@@ -5,98 +5,336 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&family=Poppins:wght@100;300;500;700&family=Roboto+Condensed:wght@700&family=Roboto:wght@100;300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/dc8f01be71/UntitledProject/style-svg.css">
+    <script defer src="https://i.icomoon.io/public/temp/dc8f01be71/UntitledProject/svgxuse.js"></script>
     <title>Fabrizio Avila</title>
 </head>
 
 <body>
-    <nav class="barra-de-navegacion-principal">
-        <div class="barra-de-navegacion__logo">
-            <img src="" alt="">
-        </div>
-        <div class="barra-de-navegacion__derecha">
-            <a href="#">Home</a>
-            <a href="#">About Me</a>
-            <a href="#">Proyects</a>
-            <a href="#">Contact</a>
-        </div>
-    </nav>
-    <header class="header">
-        <div class="header__parte-izquierda">
-            <h3>Hello,</h3>
-            <span>I am</span>
-            <h1>Fabrizio Avila</h1>
-            <span>Frontend Developer Trainee</span>
-            <div class="parte-izquierda__redes-sociales">
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+
+    <header class="header container-fluid  px-5">
+        <nav class="barra-de-navegacion-principal  ">
+            <div class="barra-de-navegacion__logo">
+                <strong class="logo-titulo">FABRIDEV.</strong>
             </div>
-            <button>Download CV</button>
-        </div>
-        <div class="header__parte-derecha">
-            <img src="" alt="">
-        </div>
+            <div class="barra-de-navegacion__derecha d-flex justify-content-around">
+                <a href="#seccion-header">Home</a>
+                <a href="#about-me-section">About Me</a>
+                <a href="#portfolio-section">Portfolio</a>
+                <a href="#contact-section">Contact</a>
+            </div>
+        </nav>
+        <section class="row" id="seccion-header">
+            <div class="header__parte-izquierda col-6 d-flex flex-column  justify-content-center">
+                <h3 class="header__hello">Hello, I am</h3>
+                <h1 class="header__name">Fabrizio Avila</h1>
+                <span class="header__dev mb-2">Frontend Developer Trainee</span>
+                <div class="parte-izquierda__redes-sociales d-flex justify-content-around mb-4">
+                    <div class="contenedor_1-botones ">
+                        <div class="contenedor_2-botones">
+                            <a href="https://github.com/Fabrizio112" target="_blank"><i
+                                    class="fa-brands fa-github fa-2x"></i></a>
+                        </div>
+                    </div>
+                    <div class="contenedor_1-botones ">
+                        <div class="contenedor_2-botones">
+                            <a href="https://www.linkedin.com/in/fabrizio-avila-3371b9232/" target="_blank"><i
+                                    class="fa-brands fa-linkedin fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="header__boton">Download CV</button>
+            </div>
+            <div class="header__parte-derecha col-6  d-flex justify-content-center align-items-center">
+                <div class="imagen__1 d-flex justify-content-center align-items-center">
+                    <div class="imagen__2 d-flex justify-content-center align-items-center">
+                        <img src=" Pictures/fabri-sin-fondo.png" id="foto-header" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
 
-    <section class="about-me">
-        <div class="about-me__parte-izquierda">
-            <h2>About Me</h2>
-            <span>Pequeño titulo</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusantium
-                voluptate dolorum molestiae hic iusto voluptates eum vitae quisquam commodi
-                nobis adipisci laborum vel tempora quasi modi sint, distinctio nam. Lorem ipsum, dolor sit amet
-                consectetur adipisicing elit. Fugiat, sapiente. Nesciunt asperiores dolor aliquam pariatur magni nulla.
-                Debitis quasi voluptates qui harum
-                accusantium mollitia, earum nesciunt quaerat dolores ipsum est.</p>
+    <section class="about-me px-5 d-flex flex-column" id="about-me-section">
+        <div class="contenedor_titulo">
+            <h2 class="text-center py-5" id="about-me__title">About <span>Me</span></h2>
         </div>
-        <div class="about-me__parte-derecha">
-            <img src="" alt="">
+        <div class="contenedor_parte-superior d-flex ">
+            <section class="about-me__parte-izquierda  d-flex flex-column justify-content-center">
+                <span id="parte-izquierda__title">A enthusiastic Front-End Developer based in Córdoba,Argentina</span>
+                <p class="my-3" id="parte-izquierda__descripcion">
+                    I am a passionate developer who is highly motivated to gain experience in software development. I
+                    have knowledge in the front-end triad (JavaScript, HTML, CSS), Bootstrap, and a little bit of JQuery
+                    and Cypress. I have worked on personal projects to grow and practice my web development skills. I am
+                    excited to collaborate on challenging projects and learn from experienced professionals in the
+                    industry. My objective is to work with a talented team of developers and continue to grow as a
+                    developer, so I can offer innovative and efficient solutions for any problem that arises
+                </p>
+            </section>
+            <section class="about-me__parte-derecha  ">
+                <img src="Pictures/imagen-primer-plano-programador-trabajando-su-escritorio-oficina.jpg"
+                    id="about-me__image" alt="">
+            </section>
         </div>
-        <div class="about-me__parte-inferior">
-            <strong>Tech Stack</strong>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+        <div class="contenedor_parte-inferior d-flex">
+            <section class="about-me__parte-inferior-izquierda  mt-4 d-flex flex-column ">
+                <strong class="mb-2 text-center">Tech <span>Stack</span></strong>
+                <div class="contenedor-logos  d-flex justify-content-around flex-wrap my-4">
+                    <div class="contenedor_1 ">
+                        <div class="contenedor_2">
+                            <i class="fa-brands fa-bootstrap fa-4x"></i>
+                        </div>
+                    </div>
+                    <div class="contenedor_1 ">
+                        <div class="contenedor_2">
+                            <i class="fa-brands fa-js fa-4x"></i>
+                        </div>
+                    </div>
+                    <div class="contenedor_1 ">
+                        <div class="contenedor_2">
+                            <i class="fa-brands fa-html5 fa-4x"></i>
+                        </div>
+                    </div>
+                    <div class="contenedor_1 ">
+                        <div class="contenedor_2">
+                            <i class="fa-brands fa-css3-alt fa-4x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor-logos  d-flex justify-content-around ">
+                    <div class="contenedor_1 ">
+                        <div class="contenedor_2">
+                            <i class="fa-brands fa-github fa-4x"></i>
+                        </div>
+                    </div>
+                    <div class="contenedor_1 ">
+                        <div class="contenedor_2">
+                            <svg class="icon icon-jquery">
+                                <use xlink:href="#icon-jquery"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contenedor_1 ">
+                        <div class="contenedor_2">
+                            <svg class="cypress" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <title>file_type_cypress</title>
+                                <path id="_Path_" data-name="&lt;Path&gt;"
+                                    d="M16.075,3.588A12.48,12.48,0,1,1,3.6,16.068a12.473,12.473,0,0,1,12.48-12.48Z"
+                                    style="fill:#4a4a4d" />
+                                <path
+                                    d="M16.075,28.775A12.707,12.707,0,1,1,28.782,16.068,12.721,12.721,0,0,1,16.075,28.775Zm0-24.959A12.253,12.253,0,1,0,28.328,16.068,12.267,12.267,0,0,0,16.075,3.815Z"
+                                    style="fill:#fff" />
+                                <g id="_Group_" data-name="&lt;Group&gt;" style="opacity:0.10000000149011612">
+                                    <path id="_Path_2" data-name="&lt;Path&gt;"
+                                        d="M29.871,16.613a1.63,1.63,0,0,0,.091-.817,1.139,1.139,0,0,1-.091-.454v-.363c0-.318-.091-.5-.091-.771a9.462,9.462,0,0,0-.318-1.634,13.736,13.736,0,0,0-3.63-6.444A12.823,12.823,0,0,0,22.61,3.77,28.61,28.61,0,0,0,19.343,2.5h-.454V2.408h-.635V2.318h-.862V2.227H14.759v.091H13.9v.091h-.545V2.5h-.545A19.7,19.7,0,0,0,9.178,4,15.908,15.908,0,0,0,7.362,5.222,21.546,21.546,0,0,0,5.547,6.947,8.31,8.31,0,0,0,4.367,8.58c-.318.545-.635,1.044-.908,1.588-.091.136-.091.318-.182.5l-.182.363c-.091.272-.136.5-.227.771a9.64,9.64,0,0,0-.454,1.634,14.78,14.78,0,0,0,.363,6.489A14.306,14.306,0,0,0,4.14,23.147a12.059,12.059,0,0,0,2.541,3.177A17.679,17.679,0,0,0,9.9,28.548c1.044.5,2.133.771,3.222,1.18h.545v.091h.862v.091h1.18V30h.635v-.091h1.18v-.091h.862v-.091h.545a35.28,35.28,0,0,0,3.63-1.407,11.514,11.514,0,0,0,3.63-2.814,13.642,13.642,0,0,0,3.267-6.444,1.892,1.892,0,0,0,.091-.272v-.182a1.612,1.612,0,0,0,.091-.454v-.363c0-.136.091-.227.091-.363A1.359,1.359,0,0,0,29.871,16.613Z"
+                                        style="fill:#fff" />
+                                    <g id="_Group_2" data-name="&lt;Group&gt;">
+                                        <path id="_Path_3" data-name="&lt;Path&gt;"
+                                            d="M16.075,3.588A12.48,12.48,0,1,1,3.6,16.068a12.473,12.473,0,0,1,12.48-12.48Z"
+                                            style="fill:#fff" />
+                                        <path
+                                            d="M16.075,28.775A12.707,12.707,0,1,1,28.782,16.068,12.721,12.721,0,0,1,16.075,28.775Zm0-24.959A12.253,12.253,0,1,0,28.328,16.068,12.267,12.267,0,0,0,16.075,3.815Z"
+                                            style="fill:#fff" />
+                                    </g>
+                                </g>
+                                <path id="_Path_4" data-name="&lt;Path&gt;"
+                                    d="M22.7,21.559a6.555,6.555,0,0,1-2.088,3.222A6.827,6.827,0,0,1,16.8,26.1l-.318-2.088a5.141,5.141,0,0,0,2.314-.726,5.873,5.873,0,0,0,.545-.545h0L15.576,10.668h3.131L20.886,19.7,23.2,10.668h3.041L22.7,21.559Z"
+                                    style="fill:#fff" />
+                                <path id="_Path_5" data-name="&lt;Path&gt;"
+                                    d="M11.764,10.259a5.18,5.18,0,0,1,1.951.318,5.865,5.865,0,0,1,1.679,1L14.124,13.3a4.977,4.977,0,0,0-1.044-.59,2.893,2.893,0,0,0-1.089-.182c-1.543,0-2.314,1.18-2.314,3.585a4.176,4.176,0,0,0,.59,2.587,1.961,1.961,0,0,0,1.724.771,2.662,2.662,0,0,0,1.044-.182,9.3,9.3,0,0,0,1.135-.59l1.271,1.815a5.421,5.421,0,0,1-3.585,1.271,5.616,5.616,0,0,1-2.814-.681,4.568,4.568,0,0,1-1.815-2,6.987,6.987,0,0,1-.635-3.041,7.133,7.133,0,0,1,.635-3.041A4.807,4.807,0,0,1,9.041,10.94a5.756,5.756,0,0,1,2.723-.681Z"
+                                    style="fill:#fff" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+            <section class="about-me__parte-inferior-derecha text-center  mt-4">
+                <strong class="mb-2">Hobbies and Likes</strong>
+                <div class="contenedor-hobbies  d-flex justify-content-around align-items-center my-4">
+                    <div class="contenedor_1-hobbies d-flex flex-column">
+                        <i class="fa-solid fa-futbol fa-4x mb-2"></i>
+                        <span>Futbol</span>
+                    </div>
+                    <div class="contenedor_1-hobbies d-flex flex-column">
+                        <i class="fa-solid fa-dumbbell fa-4x mb-2"></i>
+                        <span>Exercise</span>
+                    </div>
+                    <div class="contenedor_1-hobbies d-flex flex-column">
+                        <i class="fa-solid fa-headphones fa-4x mb-2"></i>
+                        <span>Music</span>
+                    </div>
+                    <div class="contenedor_1-hobbies d-flex flex-column">
+                        <i class="fa-solid fa-book fa-4x mb-2"></i>
+                        <span>Read</span>
+                    </div>
+                </div>
+                <div class="contenedor-hobbies  d-flex justify-content-around align-items-center my-4">
+                    <div class="contenedor_1-hobbies d-flex flex-column">
+                        <i class="fa-solid fa-car fa-4x mb-2"></i>
+                        <span>Cars</span>
+                    </div>
+                    <div class="contenedor_1-hobbies d-flex flex-column">
+                        <i class="fa-solid fa-fish-fins fa-4x mb-2"></i>
+                        <span>Go fishing</span>
+                    </div>
+                    <div class="contenedor_1-hobbies d-flex flex-column">
+                        <i class="fa-solid fa-plane fa-4x mb-2"></i>
+                        <span>Travel</span>
+                    </div>
+                    <div class="contenedor_1-hobbies d-flex flex-column">
+                        <i class="fa-solid fa-gamepad fa-4x mb-2"></i>
+                        <span>Games</span>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+    <section class="portfolio px-5" id="portfolio-section">
+        <h4 class="text-center pt-5 ">My <span>Portfolio</span></h4>
+        <span class="d-block text-center mb-5" id="latest">Latest proyect</span>
+        <div class="contenedor-de-proyectos">
+            <div class="proyect">
+                <div class="d-flex  flex-column justify-content-center align-items-center text-center"
+                    id="proyect__descripcion">
+                    <h1>Pokedex de Fabri</h1>
+                    <p>This proyect was made using the API "PokeApi" with the objetive
+                        of practise the APIs using and learn use of promises. <br>
+                        Made with HTML,CSS,BOOTSTRAP,Javascript, a little bit JQUERY testing with Cypress
+                    </p>
+                    <div class="proyect__iconos d-flex justify-content-evenly w-100">
+                        <a href="https://github.com/Fabrizio112/Pokedex" target="_blank"><i
+                                class="fa-brands fa-square-github fa-4x"></i></a>
+                        <a href="https://fabrizio112.github.io/Pokedex/" target="_blank"><i
+                                class="fa-solid fa-link fa-4x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="proyect">
+                <div class="d-flex  flex-column justify-content-center align-items-center text-center"
+                    id="proyect__descripcion">
+                    <h1>Calculador / Comparador de divisas</h1>
+                    <p>This proyect was made using the API "Currency Conversion and Exchange Rates" with the objetive
+                        of practise the APIs using and learn use of promises. <br>
+                        Made with HTML,CSS,BOOTSTRAP,Javascript,a little bit JQUERY testing with Cypress
+                    </p>
+                    <div class="proyect__iconos d-flex justify-content-evenly w-100">
+                        <a href="https://github.com/Fabrizio112/Cambio-de-Monedas" target="_blank"><i
+                                class="fa-brands fa-square-github fa-4x"></i></a>
+                        <a href="https://fabrizio112.github.io/Cambio-de-Monedas/" target="_blank"><i
+                                class="fa-solid fa-link fa-4x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="proyect">
+                <div class="d-flex  flex-column justify-content-center align-items-center text-center"
+                    id="proyect__descripcion">
+                    <h1>Simon Dice</h1>
+                    <p>This proyect was made with the objetive of practise the DOM.<br>
+                        Made with HTML,CSS,BOOTSTRAP,Javascript.
+                    </p>
+                    <div class="proyect__iconos d-flex justify-content-evenly w-100">
+                        <a href="https://github.com/Fabrizio112/Simon-Dice" target="_blank"><i
+                                class="fa-brands fa-square-github fa-4x"></i></a>
+                        <a href="https://fabrizio112.github.io/Simon-Dice/" target="_blank"><i
+                                class="fa-solid fa-link fa-4x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="proyect">
+                <div class="d-flex  flex-column justify-content-center align-items-center text-center"
+                    id="proyect__descripcion">
+                    <h1>Memo Test</h1>
+                    <p>This proyect was made with the objetive of practise the DOM and Timers.<br>
+                        Made with HTML,CSS,BOOTSTRAP,Javascript testing with Cypress
+                    </p>
+                    <div class="proyect__iconos d-flex justify-content-evenly w-100">
+                        <a href="https://github.com/Fabrizio112/MemoTest" target="_blank"><i
+                                class="fa-brands fa-square-github fa-4x"></i></a>
+                        <a href="https://fabrizio112.github.io/MemoTest/" target="_blank"><i
+                                class="fa-solid fa-link fa-4x"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="portfolio">
-        <h4>Portfolio</h4>
-        <span>Pequeño Titulo</span>
-        <article>
-            <!-- Aqui iria un projecto con cierto formato que se repetira en los otros projectos
-            Seria algo como :
-        -Imagen  ,-Titulo del projecto , -Pequeña Descripcion del Projecto(Con las tecnologias usadas y todo eso) ,-Link a GitHub y la web deployada-->
-        </article>
-    </section>
-    <section class="contact">
-        <form action="">
-            <h5>Contact Me</h5>
-            <label for="">Full Name</label>
-            <input type="text">
-            <label for="">Email</label>
-            <input type="text">
-            <label for="">Asunto</label>
-            <input type="text" name="" id="">
-            <label>Mensaje</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        </form>
-        <div class="contact__lugares-por-donde-contactarme">
-            <!-- Aqui iran los lugares por dondontactarme xdddd -->
+
+
+    <section class="contact px-5" id="contact-section">
+        <h5 class="text-center pt-5">Contact <span>Me</span></h5>
+        <span class="d-block text-center" id="touch">Get in touch</span>
+        <div class="contenedor-de-contact d-flex">
+            <div class="contact__lugares-por-donde-contactarme  d-flex flex-column justify-content-start my-4 ">
+                <div class="d-flex align-items-center my-2">
+                    <div>
+                        <i class="fa-regular fa-envelope fa-2x" style="color: #1bffff; padding: 1.3rem;"></i>
+                    </div>
+                    <div class="d-flex flex-column" id="mini-container-datos">
+                        <span>Email</span>
+                        <a>fabri.avila3@gmail.com</a>
+                    </div>
+                </div>
+                <div class="d-flex  align-items-center my-2">
+                    <div>
+                        <i class="fa-solid fa-phone fa-2x" style="color: #1bffff; padding: 1.3rem;"></i>
+                    </div>
+                    <div class="d-flex flex-column" id="mini-container-datos">
+                        <span>Whatsapp</span>
+                        <a>+54 3518015488</a>
+                    </div>
+
+                </div>
+                <div class="d-flex  align-items-center my-2">
+                    <div>
+                        <i class="fa-solid fa-location-dot fa-2x" style="color: #1bffff; padding: 1.6rem;"></i>
+                    </div>
+                    <div class="d-flex flex-column" id="mini-container-datos">
+                        <span>Location</span>
+                        <a>Córdoba , Argentina</a>
+                    </div>
+                </div>
+
+            </div>
+            <form class="contact__formulario my-4" action="">
+                <label class="form-label" for="">Full Name</label>
+                <input class="form-control my-2" type="text">
+                <label class="form-label" for="">Email</label>
+                <input class="form-control my-2" type="text">
+                <label class="form-label" for="">Affair</label>
+                <input class="form-control my-2" type="text" name="" id="">
+                <label class="form-label">Message</label>
+                <textarea class="form-control my-2" name="" id="" cols="30" rows="10"></textarea>
+                <button class="button-formulario mt-3">Send Message</button>
+            </form>
         </div>
-        <footer>
-
-        </footer>
-
     </section>
 
+    <footer class="px-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="footer__social-media mb-3">
+            <a class="social-media" href="https://twitter.com/Fabri1Avila" target="_blank"><i
+                    class="fa-brands fa-twitter fa-2x"></i></a>
+            <a class="social-media" href="https://www.facebook.com/fabri.avila.37/" target="_blank"><i
+                    class="fa-brands fa-facebook-f fa-2x"></i></a>
+            <a class="social-media" href="https://www.instagram.com/fabri_avila3/" target="_blank"><i
+                    class="fa-brands fa-instagram fa-2x"></i></a>
+        </div>
+        <p class="mt-2">COPYRIGHT 2023 . Todos los Derechos Reservados</p>
+    </footer>
 
 
-
-
-
+    <script src="https://kit.fontawesome.com/35195391d2.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
 
