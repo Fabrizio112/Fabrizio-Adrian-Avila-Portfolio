@@ -59,7 +59,7 @@ body {
 .header {
     width: 100%;
     min-width: 400px;
-    height: 110vh;
+    height: 130vh;
     background-color: #0c1022;
     color: white;
 }
@@ -190,7 +190,7 @@ body {
 .about-me {
     width: 100%;
     min-width: 400px;
-    min-height: 160vh;
+    min-height: 140vh;
     background-color: #323946;
     color: white;
 }
@@ -332,7 +332,7 @@ section .about-me__parte-inferior-izquierda {
 .portfolio {
     width: 100%;
     min-width: 400px;
-    min-height: 130vh;
+    min-height: 115vh;
     background-color: #0c1022;
     color: white;
 }
@@ -412,7 +412,7 @@ section .about-me__parte-inferior-izquierda {
 .contact {
     width: 100%;
     min-width: 400px;
-    min-height: 120vh;
+    min-height: 110vh;
     color: white;
     background-color: #323946;
 }
@@ -470,7 +470,7 @@ footer {
     color: white;
     width: 100%;
     min-width: 400px;
-    height: 40vh;
+    height: 25vh;
     padding: 2rem
 }
 
@@ -626,6 +626,11 @@ footer p {
 
 @media (max-width:850px) {
 
+    /*////////////////////////////////////////////// HEADER //////////////////////////////////////////////////////*/
+    .header {
+        height: 190vh;
+    }
+
     #seccion-header {
         display: flex;
         flex-direction: column-reverse
@@ -637,7 +642,7 @@ footer p {
     }
 
     .header__parte-derecha .imagen__1 {
-        width: 60%;
+        width: 90%;
         height: 100%;
     }
 
@@ -651,6 +656,10 @@ footer p {
         margin-bottom: 2rem !important;
     }
 
+    .header__parte-izquierda .header__dev {
+        margin-bottom: 2rem !important;
+    }
+
     .barra-de-navegacion__derecha {
         display: none !important;
     }
@@ -659,29 +668,117 @@ footer p {
         display: flex;
     }
 
-    .header__parte-izquierda .header__hello {
-        font-size: 2rem;
+    /*////////////////////////////////////////////// ABOUT //////////////////////////////////////////////////////*/
+    .about-me {
+        padding-bottom: 3rem;
     }
 
-    .header__parte-izquierda .header__name {
-        font-size: 4.4rem;
+    .contenedor_parte-superior {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
-    .header__parte-izquierda .header__dev {
-        font-size: 1.8rem;
+    section .about-me__parte-derecha {
+        width: 100%;
+        height: 50%;
     }
 
-    .header__boton {
-        width: 30%;
-        font-size: 1rem;
+    section .about-me__parte-izquierda {
+        width: 100%;
+        height: 50%;
+        margin-top: 3rem;
     }
 
-    .parte-izquierda__redes-sociales {
-        width: 20%;
-
+    .contenedor_parte-inferior {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
-    .contenedor_1-botones {
+    section .about-me__parte-inferior-izquierda {
+        width: 100%;
+        height: 50%;
+    }
+
+    section .about-me__parte-inferior-derecha {
+        width: 100%;
+        height: 50%;
+    }
+
+    /*////////////////////////////////////////////// PROYECT //////////////////////////////////////////////////////*/
+    .portfolio {
+        padding-bottom: 3rem;
+    }
+
+    .contenedor-de-proyectos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyect {
+        width: 100%;
+        height: 22rem;
+    }
+
+    /*////////////////////////////////////////////// CONTACT ME //////////////////////////////////////////////////////*/
+    .contact {
+        padding-bottom: 2rem;
+    }
+
+    .contenedor-de-contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact__lugares-por-donde-contactarme {
+        width: 100%;
+        justify-content: center !important;
+        align-items: center;
+    }
+
+    #container-datos {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .grande {
+        font-size: 4em !important;
+    }
+
+    #container-datos__titulo {
+        font-size: 3rem;
+    }
+
+    #container-datos__descripcion {
+        font-size: 1.5rem;
+    }
+
+    .contact__formulario {
+        width: 100%;
+    }
+
+    form label {
+        font-size: 1.5rem;
+    }
+
+    .button-formulario {
         width: 50%;
+        padding: 25px 0;
+    }
+
+    /*////////////////////////////////////////////// FOOTER //////////////////////////////////////////////////////*/
+    footer p {
+        font-size: 1.5rem;
+    }
+
+    .footer__social-media {
+        width: 50%;
+        height: 8vh;
+    }
+
+    .footer__social-media a {
+        width: 22%;
     }
 }
