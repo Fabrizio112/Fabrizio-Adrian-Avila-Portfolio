@@ -13,6 +13,8 @@ body {
     align-items: center;
 }
 
+/*////////////////////////////////////////////// HEADER //////////////////////////////////////////////////////*/
+
 .logo-titulo {
     font-family: 'Lobster', cursive;
     font-size: 2rem;
@@ -62,6 +64,7 @@ body {
     height: 130vh;
     background-color: #0c1022;
     color: white;
+    padding-bottom: 2rem;
 }
 
 #seccion-header {
@@ -185,7 +188,7 @@ body {
 
 }
 
-/* ////////////////////////////////////////Seccion ABout///////////////////////////////////////////////// */
+/*////////////////////////////////////////////// ABOUT //////////////////////////////////////////////////////*/
 
 .about-me {
     width: 100%;
@@ -193,6 +196,7 @@ body {
     min-height: 140vh;
     background-color: #323946;
     color: white;
+    padding-bottom: 2rem;
 }
 
 #about-me__title {
@@ -327,7 +331,7 @@ section .about-me__parte-inferior-izquierda {
     height: 130px;
 }
 
-/* Seccion Portfolio */
+/*////////////////////////////////////////////// PORTFOLIO //////////////////////////////////////////////////////*/
 
 .portfolio {
     width: 100%;
@@ -335,6 +339,7 @@ section .about-me__parte-inferior-izquierda {
     min-height: 115vh;
     background-color: #0c1022;
     color: white;
+    padding-bottom: 3rem;
 }
 
 #portfolio-section #latest {
@@ -408,13 +413,14 @@ section .about-me__parte-inferior-izquierda {
 }
 
 /* Guardo este color ultra mega fachero #ee041adb */
-/*/////////////////////////////////////Seccion Contact ///////////////// */
+/*////////////////////////////////////////////// CONTACT US //////////////////////////////////////////////////////*/
 .contact {
     width: 100%;
     min-width: 400px;
     min-height: 110vh;
     color: white;
     background-color: #323946;
+    padding-bottom: 2rem;
 }
 
 #contact-section h5 {
@@ -464,7 +470,7 @@ section .about-me__parte-inferior-izquierda {
 }
 
 
-/* /////////////////////////////////////////////FOOTER ///////////////////////////////////// */
+/*////////////////////////////////////////////// FOOTER //////////////////////////////////////////////////////*/
 footer {
     background-color: black;
     color: white;
