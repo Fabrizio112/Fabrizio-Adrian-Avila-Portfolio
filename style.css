@@ -37,9 +37,10 @@ body {
     animation-delay: .2s;
 }
 
-.barra-de-navegacion-principal .barra-de-navegacion__derecha {
+.barra-de-navegacion__derecha {
     width: 50%;
     display: flex;
+    justify-content: space-around;
     opacity: 0;
     animation: animacionAparicionDeAbajo .5s ease forwards;
     animation-delay: .5s;
@@ -49,7 +50,7 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     transition: .4s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -119,16 +120,16 @@ body {
 
 
 .imagen__1 {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 82%;
     border-radius: 50%;
     background: linear-gradient(10deg, #2E3192, #1BFFFF);
     animation: efectoBackgroundImagen 1s infinite cubic-bezier(0.165, 0.84, 0.44, 1), efectoDeTraslado 3s infinite ease-in-out;
 }
 
 .imagen__2 {
-    width: 96%;
-    height: 96%;
+    width: 98%;
+    height: 98%;
     border-radius: 50%;
     background: #1f242d;
 }
@@ -186,6 +187,11 @@ body {
 .header__boton:hover {
     transform: scale(1.2);
 
+}
+
+.header__boton a {
+    text-decoration: none;
+    color: white;
 }
 
 /*////////////////////////////////////////////// ABOUT //////////////////////////////////////////////////////*/
@@ -331,6 +337,12 @@ section .about-me__parte-inferior-izquierda {
     height: 130px;
 }
 
+.icono {
+    width: 70px;
+    height: 70px;
+}
+
+
 /*////////////////////////////////////////////// PORTFOLIO //////////////////////////////////////////////////////*/
 
 .portfolio {
@@ -437,11 +449,11 @@ section .about-me__parte-inferior-izquierda {
 }
 
 .contact__lugares-por-donde-contactarme {
-    width: 30%;
+    width: 35%;
 }
 
 .contact__formulario {
-    width: 70%;
+    width: 65%;
     height: 100%;
 }
 
@@ -485,7 +497,7 @@ footer p {
 }
 
 .footer__social-media {
-    width: 20%;
+    width: 16%;
     height: 9vh;
     display: flex;
     justify-content: space-evenly;
@@ -494,11 +506,12 @@ footer p {
 .footer__social-media a {
     background-color: white;
     border-radius: 50%;
-    width: 26%;
+    width: 27%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    padding: 0.6rem;
 }
 
 
@@ -637,6 +650,22 @@ footer p {
         height: 190vh;
     }
 
+    .logo-titulo {
+        font-size: 3.5rem;
+    }
+
+    .barra-de-navegacion-principal {
+        flex-direction: column;
+    }
+
+    .barra-de-navegacion-principal .barra-de-navegacion__logo {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
     #seccion-header {
         display: flex;
         flex-direction: column-reverse
@@ -667,11 +696,30 @@ footer p {
     }
 
     .barra-de-navegacion__derecha {
-        display: none !important;
+        display: none;
+        flex-direction: column;
+        z-index: 1;
+        width: 113%;
+        justify-content: center;
+        align-items: center;
+        background: #0c1022d9;
+    }
+
+    .barra-de-navegacion__derecha a {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 0.7rem;
+        font-size: 2rem;
     }
 
     #menu {
         display: flex;
+        margin-right: 1rem;
+    }
+
+    #menu:hover {
+        cursor: pointer;
     }
 
     /*////////////////////////////////////////////// ABOUT //////////////////////////////////////////////////////*/
@@ -780,8 +828,9 @@ footer p {
     }
 
     .footer__social-media {
-        width: 50%;
+        width: 40%;
         height: 8vh;
+        margin-bottom: 0.5rem;
     }
 
     .footer__social-media a {
